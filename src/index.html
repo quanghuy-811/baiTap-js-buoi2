@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <!-- Bài tập hiển thị mật khẩu -->
+    <div class="container">
+      <h3 class="title">Bài tập hiển thị mật khẩu</h3>
+      <div>
+        <label
+          for="small-input"
+          class="block mb-2 text-sm font-medium text-gray-900"
+          >Tên đăng nhập</label
+        >
+        <input
+          type="text"
+          id="small-input"
+          class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+        />
+      </div>
+      <div class="mt-3">
+        <label
+          for="inputPassword"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Mật khẩu</label
+        >
+        <div class="relative">
+          <input
+            type="text"
+            id="inputPassword"
+            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+          />
+          <i
+            onclick="onClickPassword()"
+            id="iconPassword"
+            class="fa fa-eye absolute cursor-pointer right-3 top-3"
+          >
+          </i>
+        </div>
+      </div>
+    </div>
+    <!-- Tính lương nhân viên -->
+    <div class="container mt-5">
+      <h3 class="title">Bài tập tính lương nhân viên</h3>
+      <div class="flex justify-around items-center">
+        <div class="w-2/5">
+          <label
+            for="salary"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >Lương Cơ Bản</label
+          >
+          <input
+            type="text"
+            id="salary"
+            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+          />
+          <label
+            for="numberDays"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >Số ngày làm</label
+          >
+          <input
+            type="text"
+            id="numberDays"
+            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div class="w-2/5">
+          <button class="btn" onclick="salaryCal()">Tính lương</button>
+          <div id="total">Kết quả: <span></span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Tính số trung bình -->
+    <div class="container mt-5">
+      <h3 class="title">Bài tập tính số trung bình</h3>
+      <div class="flex justify-around items-center">
+        <div class="w-2/5">
+          <input
+            placeholder="Nhập só 1"
+            type="text"
+            id="number1"
+            class="mb-3 block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+          />
+          <input
+            placeholder="nhập số 2"
+            type="text"
+            id="number2"
+            class="mb-3 block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+          />
+          <input
+            placeholder="nhập số 3"
+            type="text"
+            id="number3"
+            class="mb-3 block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+          />
+          <input
+            placeholder="nhập số 4"
+            type="text"
+            id="number4"
+            class="mb-3 block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+          />
+          <input
+            placeholder="nhập số 5"
+            type="text"
+            id="number5"
+            class="mb-3 block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div class="w-2/5">
+          <button class="btn" onclick="score()">Tính điểm trung bình</button>
+          <div id="average-score">Kết quả điểm trung bình: <span></span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Quy đổi tiền tệ -->
+    <div class="container mt-5">
+      <h3 class="title">Bài tập Quy đổi tiền tệ</h3>
+      <div class="flex justify-around items-center">
+        <div class="w-2/5">
+          <label
+            for="priceUSD"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >Giá USD</label
+          >
+          <input
+            type="text"
+            id="priceUSD"
+            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+          />
+          <label
+            for="quantity"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >Số lượng</label
+          >
+          <input
+            type="text"
+            id="quantity"
+            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div class="w-2/5">
+          <button class="btn" onclick="convertUSD()">Quy đổi</button>
+          <div id="totalUSD">Kết quả: <span></span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Tính chu vi và diện tích -->
+    <div class="container mt-5">
+      <h3 class="title">Bài tập tính chu vi và diện tích</h3>
+      <div class="flex justify-around items-center">
+        <div class="w-2/5">
+          <label
+            for="length"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >Chiều dài</label
+          >
+          <input
+            type="text"
+            id="length"
+            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+          />
+          <label
+            for="width"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >Chiều rộng</label
+          >
+          <input
+            type="text"
+            id="width"
+            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <div class="w-2/5">
+          <button class="btn" onclick="rectangle()">Tính</button>
+          <div id="perimeter">Chu vi hình chữ nhật: <span></span></div>
+
+          <div id="acreage">Diện tích hình chữ nhật: <span></span></div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <script src="./js/main.js"></script>
+  </body>
+</html>
